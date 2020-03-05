@@ -8,9 +8,14 @@ const Post = (props) => {
                         <img src="http://placeimg.com/80/80/nature" alt="Gambar Tumbnail Artikel"/>
                     </div>
                     <div className="konten-artikel">
-                        <div className="judul-artikel">{props.judul}</div>
+                        <div className="judul-artikel">{props.NIM}</div>
+                        <div className="judul-artikel">{props.nama}</div>
+                        <div className="judul-artikel">{props.alamat}</div>
+                        <div className="judul-artikel">{props.hp}</div>
+                        <div className="judul-artikel">{props.angkatan}</div>
+                        <div className="judul-artikel">{props.status}</div>
                         <p className="isi-artikel">{props.isi}</p>
-                        <button className="btn btn-sm btn-warning onClick={props.hapusArtikel}">Hapus</button>
+                        <button className="btn btn-sm btn-warning" onClick={() => props.hapusMahasiswa(props.idMahasiswa)}>Hapus</button>
                     </div>
                 </div>
             </div>
