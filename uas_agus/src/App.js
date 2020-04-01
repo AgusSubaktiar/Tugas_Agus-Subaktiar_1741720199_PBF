@@ -2,6 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import image1 from './images/jazz.jpg'
+import image2 from './images/dangdut.png'
+import image3 from './images/rock.jpg'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -44,6 +48,8 @@ export default function NestingExample(){
           </ul>
         </nav>
 
+      <Redirect exact from="/" to="/profil"/>
+
         <Switch>
           <Route exact path="/">
               <Topics />
@@ -54,8 +60,12 @@ export default function NestingExample(){
             <LoginPage/>
           </Route>
 
+          <Route path="/about">
+            <About/>
+          </Route>
+
           <PrivateRoute path = "/profil">
-            <Profil/>
+            <About/>
           </PrivateRoute>
 
           <Route path="/topics">
@@ -260,21 +270,60 @@ function Home(){
 }
 
 function Profil(){
-  return (
+  return <from className="from" action="/topics">
     <div>
       <AuthButton/>
 
       <h2>INI ADALAH HALAMAN PROFIL </h2>
       {/* <button className="btn btn-info">Login</button> */}
     </div>
-  );
+    </from>
 }
 function About(){
-  return (
+  return <div id="wrapper">
+  <div id="logo" class="container">
+    <h1><a href="#">ARTI DAN SEJARAH MUSIK</a></h1>
+  </div>
+  <div id="page" class="container">
     <div>
-      <h2>INI ADALAH HALAMAN about</h2>
+      <div class="entry">
+        <p>Ini adalah <strong>Jenis Musik </strong>, web untuk melihat jenis musik</p>
+      </div>
     </div>
-  );
+  </div>
+  <div id="three-column" class="container">
+  <div class="tbox1">
+    <div class="box-style box-style01">
+      <div class="content">
+        <div class="image"><img src={image1} width="324" alt="" /></div>
+        <h2>Jazz</h2>
+        <p>Asal usul kata ‘jazz’ merupakan salah satu kata yang paling banyak dicari dalam bahasa Inggris Amerika modern. Seperti yang dijelaskan dalam wikipedia, ‘jazz’ muncul sebagai istilah dari bahasa slang, sebuah daerah pantai barat Amerika Serikat. Penggunaan istilah ‘jazz’ pertama kali digunakan sebagai istilah musik pada tahun 1915 di Chicago.</p>
+        <Link to="topics/Jazz" class="button">View</Link>
+      </div>
+    </div>
+  </div>
+  <div class="tbox2">
+    <div class="box-style box-style02">
+      <div class="content">
+        <div class="image"><img src={image2} width="324"  alt="" /></div>
+        <h2>Rock</h2>
+        <p>Musik rok (bahasa Inggris: rock) atau musik cadas adalah genre musik populer yang mulai diketahui secara umum pada pertengahan tahun '50-an. Akarnya berasal dari rhythm and blues, musik country dari tahun '40 dan '50-an serta berbagai pengaruh lainnya. Selanjutnya, musik rok juga mengambil gaya dari berbagai musik lainnya, termasuk musik rakyat (folk music), jazz dan musik klasik.</p>
+        <Link to="topics/Rock" class="button">View</Link>
+      </div>
+    </div>
+  </div>
+  <div class="tbox3">
+    <div class="box-style box-style03">
+      <div class="content">
+        <div class="image"><img src={image3} width="324"  alt="" /></div>
+        <h2>Dangdut</h2>
+        <p>Dangdut merupakan salah satu dari genre seni musik populer tradisional Indonesia yang khususnya memiliki unsur-unsur Hindustani (India), Melayu, dan Arab. Dangdut bercirikan dentuman tabla (alat musik perkusi India) dan gendang. Dangdut juga sangat dipengaruhi dari lagu-lagu musik India klasik dan Bollywood.</p>
+        <Link to="topics/Dangdut" class="button">View</Link>
+      </div>
+    </div>
+  </div>
+</div>
+</div>;
 }
 
 const fakeAuth = {
@@ -297,7 +346,7 @@ function AuthButton(){
       Welcome!{" "}
       <button 
         onClick={() => {
-          fakeAuth.signout(() => history.push('/home'));
+          fakeAuth.signout(() => history.push('/about'));
         }}
         >
         SignOut
@@ -340,7 +389,7 @@ function LoginPage(){
   let history = useHistory();
   let location = useLocation();
 
-  let { from } = location.state || { from: {pathname: "/"} };
+  let { from } = location.state || { from: {pathname: "/topics"} };
   let login = () => {
     fakeAuth.authenticate(() => {
       history.replace(from);
