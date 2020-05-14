@@ -60,7 +60,7 @@ class App extends Component {
     return (
       <div className="notesWrapper">
         <div className="notesHeader">
-          <div>Review</div>
+          <div>Kritik&Saran</div>
         </div>
         <div className="notesBody">
           {this.state.notes.map((note) => {

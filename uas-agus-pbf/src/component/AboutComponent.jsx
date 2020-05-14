@@ -18,13 +18,10 @@ const AboutComponent = () => {
                   <img src="about.jpg" alt="" />
     <br/>
     <br></br>
-    <p class="card-text" > Hei Beauties ?
-
-    Here at Female Daily, we think beauty is the HAPPINESS you feel every day from the little things. We love mornings with a great cup of coffee in the pantry, sharing nail polish shades after lunch, and having open discussions about our brand, vision, goals and the remarkable ways to achieve them.
-
-FEMALE DAILY is all about empowering women through the happiness from small acts of joy, like opening a new tube of lipstick. FEMALE DAILY is about YOU. We want to bring out the inner beauty already engrained in women of all sizes, shapes, and ages, and help you share that with the world.
-
-Also we are proud to tell you that Female Daily is now part of Detik Network under Transmedia Group. </p>
+    <p class="card-text" > Semua makhluk di bumi mendoakan penuntut ilmu
+                  Tak hanya orang tua yang selalu mendoakan anaknya, seluruh makhluk yang ada di bumi ini bahkan ikut mendoakan orang yang giat mencari ilmu. Sebagaimana sabda Rasulullah Saw:
+                 وَإِنَّ الْمَلَائِكَةَ لَتَضَعُ أَجْنِحَتَهَا رِضًا لِطَالِبِ الْعِلْمِ، وَإِنَّ الْعَالِمَ لَيَسْتَغْفِرُ لَهُ مَنْ فِي السَّمَوَاتِ، وَمَنْ فِي الْأَرْضِ، وَالْحِيتَانُ فِي جَوْفِ الْمَاءِ
+                  "Sungguh, para malaikat merendahkan sayapnya sebagai keridaan kepada penuntut ilmu. Orang yang berilmu akan dimintai ampunan oleh penduduk langit dan bumi, bahkan hingga ikan yang ada di dasar laut."(HR. Abu Daud, Tirmidzi dan Ibnu Majah) </p>
                
               </Card.Body>
               <div class="row mt-5">

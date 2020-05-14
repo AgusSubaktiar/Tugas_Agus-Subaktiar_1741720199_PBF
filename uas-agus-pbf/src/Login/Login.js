@@ -32,7 +32,6 @@ const Login = ({ history }) => {
     history.push("/signup");
   };
 
- 
 
   const { currentUser } = useContext(AuthContext);
 
@@ -43,7 +42,7 @@ const Login = ({ history }) => {
   return (
     <div className="Login">
       <section className="form animated flipInX">
-        <h2>Login To Your Account</h2>
+        <h2>Login Ke Akun Anda</h2>
         <form className="loginbox" onSubmit={handleLogin}>
           <label>
             Email
@@ -60,7 +59,6 @@ const Login = ({ history }) => {
         <button id="submit" onClick={signUp}>
           Sign Up
         </button>
-       
       </section>
     </div>
   );

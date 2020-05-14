@@ -31,7 +31,7 @@ const SignUp = ({ history }) => {
   return (
     <div className="Signup">
       <section className="form animated flipInX">
-        <h2>Create your Account</h2>
+        <h2>Buat Akun Anda</h2>
         <form className="loginbox" onSubmit={handleSignUp}>
           <label>
             Email

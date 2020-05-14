@@ -53,7 +53,7 @@ export default function Uas() {
             <hr /> 
             <div >
               <p className="six column">
-                <strong> Aliquam condimentum diam vitae magna</strong>
+                <strong> Inilah Hadits-hadits Tentang Menuntut Ilmu itu Wajib</strong>
                 <br></br>
                 <br></br>
                 &nbsp;&nbsp;&nbsp;&nbsp; Imam Syafi’i pernah berkata, “Ta’allam falaisal mar’u yuuladu ‘aaliman. Belajarlah karena tidak ada orang yang terlahir dalam keadaan berilmu.
@@ -71,10 +71,10 @@ export default function Uas() {
               </p>
               <div className="youtube">
                 <div className="flex-video widescreen ">
-                <iframe width="420" height="315" src="https://www.youtube.com/embed/nNPzRXdsH7k" frameborder="0" allowfullscreen></iframe>
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/aN0ZnoRg_IY" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <p>
-                  <span className=" label orange">&nbsp;&nbsp;&nbsp;&nbsp; Annabi Shollu Alaih - Majelis Jamu Legi</span>
+                  <span className=" label orange">&nbsp;&nbsp;&nbsp;&nbsp; SABYAN - AISYAH ISTRI RASULULLAH | COVER</span>
                   <hr></hr>
                   <em>&nbsp;&nbsp;&nbsp;&nbsp;Semua makhluk di bumi mendoakan penuntut ilmu
                   Tak hanya orang tua yang selalu mendoakan anaknya, seluruh makhluk yang ada di bumi ini bahkan ikut mendoakan orang yang giat mencari ilmu. Sebagaimana sabda Rasulullah Saw:
